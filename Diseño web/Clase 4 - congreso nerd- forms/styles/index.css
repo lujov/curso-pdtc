@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,200;0,400;0,500;0,700;1,200;1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    width: 100% ;
+    height: auto;
+    padding: 4%;
+    background: rgb(20,15,32);
+    background: linear-gradient(90deg, rgba(20,15,32,1) 4%, rgba(231,157,236,1) 98%);   
+}
+
+h1 {
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 3rem;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: rgb(82, 81, 81);
+    margin-top: 2%;
+}
+
+.form {
+    padding: 3% 10% 5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(63, 63, 63);
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 2%;
+    border: solid #99d8d0 1px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.input-select {
+    margin-bottom: 2%;
+}
+
+.button-submit {
+    width: auto;
+    padding: 5px;
+    border: solid #99d8d0;
+    border-radius: 5px;
+    background-color: #99d8d0c9 ;
+}

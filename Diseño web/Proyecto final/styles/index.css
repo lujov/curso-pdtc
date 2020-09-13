@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+/* RUTA DE COLORES */
+:root {
+    --color-primary:#557571;
+    --color-secondary: #d49a89;
+    --color-terciary: #f7d1ba;
+  }
+  
+/* ESTILOS GENERALES */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body-full-container {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+.header-title {
+    /* font-family: 'Antic Didone', serif; */
+    font-family: 'Playfair Display', serif;
+    /* font-style: italic; */
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(65, 65, 65);
+    box-sizing: border-box;
+    margin-top: 2%;
+}
+
+.header-img {
+width: 100%;
+height: auto;
+}
+
+/* NAVBAR */
+
+.navbar-container{
+    box-sizing: border-box;
+    padding: 2% 11%;
+    display: block;
+}
+
+.navbar-list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color:  rgb(49, 49, 49);
+}
+
+.navbar-sublist {
+    list-style: none;
+    width: 6em;
+    padding: 2% 0%;
+    height: 0px;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.navbar-list-item {
+    height: 20%;
+    padding: 2% 0%;
+    transition: border-top 0.5s ease-in-out;
+}
+
+.navbar-list-item:hover {
+    border-top: solid var(--color-primary) 8px;
+    color: var(--color-primary) ;
+}
+
+.navbar-list-item:hover > a {
+    color: var(--color-primary) ;
+}
+
+.navbar-sublist-item:hover > a {
+    color: var(--color-primary) ;
+}
+
+.navbar-list-item:hover > .navbar-sublist {
+    height: 100px;
+    /* background-color: burlywood; */
+}
+
+.navbar-sublist-item {
+    margin-top: 3%;
+}
+
+/* SECTIONS */
+.section-full-container {
+    background-color: var(--color-terciary);
+    padding: 4% 11%;
+    box-sizing: border-box;
+    /* display: block; */
+}
+
+.section-container {
+    background-color: #fafafa;
+    scroll-behavior: smooth;
+    box-shadow: 0 0 8px 0 #d49a89ef;
+}
