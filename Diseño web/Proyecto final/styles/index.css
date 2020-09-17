@@ -21,10 +21,11 @@
     font-family: 'Playfair Display', serif;
     /* font-style: italic; */
     text-align: center;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: rgb(65, 65, 65);
     box-sizing: border-box;
-    margin-top: 2%;
+    margin-top: 1.8%;
+    margin-bottom: 2% ;
 }
 
 .header-img {
@@ -36,8 +37,14 @@ height: auto;
 
 .navbar-container{
     box-sizing: border-box;
-    padding: 2% 11%;
+    padding: 0% 11%;
     display: block;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+    border-bottom: solid var(--color-secondary) 1px;
+    z-index: 1;
 }
 
 .navbar-list {
@@ -49,6 +56,7 @@ height: auto;
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     box-sizing: border-box;
+    /* height: 4rem; */
 }
 
 a:link, a:visited, a:active {
@@ -184,4 +192,25 @@ a:link, a:visited, a:active {
     margin-top: 5%;
     border-bottom: solid 1px rgba(128, 128, 128, 0.342);
     padding-bottom: 5%;
+}
+
+.skills-cajas-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.skills-img {
+    width: 26%;
+    height: auto;
+    padding: 2%;
+}
+
+.skills-img:hover {
+    filter: brightness(1.1);
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.356));
 }
