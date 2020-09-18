@@ -258,8 +258,112 @@ a:link, a:visited, a:active {
     margin-bottom: 5%;
 }
 
+/* DESARROLLO WEB */
 .desarrollo-web-section {
     margin-top: 5%;
     border-bottom: solid 1px rgba(128, 128, 128, 0.342);
     padding-bottom: 5%;
+}
+
+/* DW-SKILLS */
+.dw-skills-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.dw-skills-full-container {
+    margin-top: 5%;
+}
+
+.dw-skills-img {
+    width: 26%;
+    height: auto;
+    padding: 2%;
+}
+
+.dw-skills-img:hover {
+    filter: brightness(1.1);
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.356));
+}
+
+/* DW-TRABAJOS */
+.dw-trabajos-full-container {
+    margin-top: 5%;
+}
+
+.dw-trabajos-container {
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.dw-trabajos-div1 {
+    flex: 1 1 auto;
+    padding: 1%;
+    text-align: center;
+}
+
+.dw-trabajos-div2 {
+    flex: 1 1 auto;
+    padding: 1%;
+    text-align: center;
+}
+
+.dw-trabajos-img {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+/* FOOTER */
+
+.footer-container {
+    background-color: var(--color-secondary);
+    width: 100%;
+    height: auto;
+    padding: 4% 11% ;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    flex-direction: wrap;
+    justify-content: space-between;
+}
+
+.form-name {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2%;
+}
+
+.form-item-name {
+    margin-bottom: 4%;
+    padding: 0.5%;
+    border: var(--color-primary) solid 1px;
+}
+
+.form-item-ap {
+    padding: 0.5%;
+    border: none;
+} 
+
+textarea {
+    width: 100%;
+    margin-left: 2%;
+    padding: 0.5% 1%;
+}
+
+.button-submit {
+    margin-top: 2%;
+    padding: 0.5% 1%;
 }

@@ -31,10 +31,10 @@
                 <li class="navbar-list-item"><a href="">Contactame</a></li>
             </ul>
         </nav>
-        <div class="section-full-container">
+        <div class="section-full-container" id="sobre-mi">
             <div class="section-container">
                 <!-- SECCION SOBRE MI -->
-                <section class="sobre-mi-section" id="sobre-mi">
+                <section class="sobre-mi-section">
                     <h2 class="title-2">Sobre mi</h2>
                     <div class="sobre-mi-content">
                         <div class="sobre-mi-info">
@@ -43,11 +43,12 @@
                         </div>
                         <img class="sobre-mi-img" src="imagenes/sobremi.jpg" alt="mi-imagen">
                     </div>
+                    <div id="arquitectura"></div>
                 </section>
                 <!-- SECCION ARQUITECTURA -->
-                <section class="arquitectura-section" id="arquitectura">
+                <section class="arquitectura-section" id="arq-skills">
                     <h2 class="title-2">Arquitectura</h2>
-                    <div class="arq-skills-full-container" id="arq-skills">
+                    <div class="arq-skills-full-container">
                         <h3 class="title-3">Skills</h3>
                         <div class="arq-skills-container">
                             <img class="arq-skills-img" src="imagenes/autocadcirc.png" alt="autocad">
@@ -57,8 +58,9 @@
                             <img class="arq-skills-img" src="imagenes/Photoshop.png" alt="photoshop">
                             <img class="arq-skills-img" src="imagenes/ilustrator.png" alt="ilustrator">
                         </div>
+                        <div id="arq-trabajos"></div>
                     </div>
-                    <div class="arq-trabajos-full-container" id="arq-trabajos">
+                    <div class="arq-trabajos-full-container">
                         <h3 class="title-3">Trabajos</h3>
                         <div class="arq-trabajos-container">
                             <div class="arq-trabajos-div1">
@@ -74,32 +76,54 @@
                                 <p>Proyectos académicos</p>
                             </div>
                         </div>
+                        <div id="desarrollo-web"></div>
                     </div>
                 </section>
                 <!-- SECCION DESARROLLO WEB -->
-                <section class="desarrollo-web-section" id="desarrollo-web">
+                <section class="desarrollo-web-section" id="dw-skills">
                     <h2 class="title-2">Desarrollo Web</h2>
                     <!-- SKILLS -->
-                    <div class="dw-skils-full-container" id="dw-skills">
+                    <div class="dw-skills-full-container">
                         <h3 class="title-3">Skills</h3>
                         <div class="dw-skills-container">
-                            <img class="arq-skills-img" src="imagenes/html5.png" alt="html5">
-                            <img class="arq-skills-img" src="imagenes/css3.png" alt="css3">
-                            <img class="arq-skills-img" src="imagenes/v-ray.png" alt="v-ray">
-                            <img class="arq-skills-img" src="imagenes/revit.png" alt="revit">
-                            <img class="arq-skills-img" src="imagenes/Photoshop.png" alt="photoshop">
-                            <img class="arq-skills-img" src="imagenes/ilustrator.png" alt="ilustrator">
+                            <img class="dw-skills-img" src="imagenes/html5.png" alt="html5">
+                            <img class="dw-skills-img" src="imagenes/css3.png" alt="css3">
+                            <img class="dw-skills-img" src="imagenes/Bootstrap.png" alt="bootstrap">
+                            <img class="dw-skills-img" src="imagenes/javascript.png" alt="javascript">
+                            <img class="dw-skills-img" src="imagenes/nodejs.png" alt="nodejs">
+                            <img class="dw-skills-img" src="imagenes/mysql.png" alt="mysql">
                         </div>
                     </div>
-                    <div>
-                        <!-- TRABAJOS -->
+                    <!-- TRABAJOS -->
+                    <div class="dw-trabajos-full-container">
+                        <h3 class="title-3">Trabajos</h3>
+                        <div class="dw-trabajos-container">
+                            <div class="dw-trabajos-div1">
+                                <img class="dw-trabajos-img" src="imagenes/pagfarmacia.png" alt="pag-farmacia">
+                                <p>Página web en proceso para farmacia</p>
+                            </div>
+                            <div class="dw-trabajos-div2">
+                                <img class="dw-trabajos-img" src="imagenes/pagrocket.png" alt="pag-farmacia">
+                                <p>Página web para curso de RocketCode</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
-                <section>
-                    <!-- CONTACTO -->
-                </section>
+                <!-- CONTACTO -->
             </div>
         </div>
     </div>
+    <footer class="footer-container">
+        <form action="https://formspree.io/xoqpagwd" method="POST">
+            <div class="form">
+                <div class="form-name">
+                    <input class="form-item-name" type="text" name="name" placeholder="Nombre">
+                    <input class="form-item-ap" type="text" name="apellido" placeholder="Apellido">
+                </div>
+                <textarea name="texto" placeholder="Escribí tu consulta"></textarea>
+            </div>
+            <input class="button-submit" type="submit" id="enviar">
+        </form>
+    </footer>
 </body>
 </html>
