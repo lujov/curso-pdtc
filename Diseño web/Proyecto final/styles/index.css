@@ -194,7 +194,12 @@ a:link, a:visited, a:active {
     padding-bottom: 5%;
 }
 
-.skills-cajas-container {
+/* ARQ-SKILLS */
+.arq-skills-full-container{
+    margin-top: 5%;
+}
+
+.arq-skills-container {
     width: 100%;
     height: auto;
     display: flex;
@@ -204,13 +209,57 @@ a:link, a:visited, a:active {
     box-sizing: border-box;
 }
 
-.skills-img {
+.arq-skills-img {
     width: 26%;
     height: auto;
     padding: 2%;
 }
 
-.skills-img:hover {
+.arq-skills-img:hover {
     filter: brightness(1.1);
     filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.356));
+}
+
+/* ARQ-TRABAJOS */
+.arq-trabajos-full-container {
+    margin-top: 5%;
+}
+
+.arq-trabajos-container {
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.arq-trabajos-div1 {
+    flex: 1 1 auto;
+    padding: 1%;
+    text-align: center;
+}
+
+.arq-trabajos-div2 {
+    flex: 1 1 auto;
+    padding: 1%;
+    text-align: center;
+}
+
+.arq-trabajos-div3 {
+    flex: 1 1 auto;
+    padding: 1%;
+    text-align: center;
+}
+
+.arq-trabajos-img {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.desarrollo-web-section {
+    margin-top: 5%;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.342);
+    padding-bottom: 5%;
 }
