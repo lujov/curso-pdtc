@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.css">
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+    <link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Lucía Rodríguez Jovanovich </title>
 </head>
 <body class="body-full-container">
@@ -25,10 +26,10 @@
                 <li class="navbar-list-item"><a href="#desarrollo-web">Desarrollo web</a>
                     <ul class="navbar-sublist">
                         <li class="navbar-sublist-item"><a href="#dw-skills">Skills</a></li>
-                        <li class="navbar-sublist-item"><a href="">Trabajos</a></li>
+                        <li class="navbar-sublist-item"><a href="#dw-trabajos">Trabajos</a></li>
                     </ul>
                 </li>
-                <li class="navbar-list-item"><a href="">Contactame</a></li>
+                <li class="navbar-list-item"><a href="#contactame">Contactame</a></li>
             </ul>
         </nav>
         <div class="section-full-container" id="sobre-mi">
@@ -93,18 +94,23 @@
                             <img class="dw-skills-img" src="imagenes/nodejs.png" alt="nodejs">
                             <img class="dw-skills-img" src="imagenes/mysql.png" alt="mysql">
                         </div>
+                        <div id="dw-trabajos"></div>
                     </div>
                     <!-- TRABAJOS -->
                     <div class="dw-trabajos-full-container">
                         <h3 class="title-3">Trabajos</h3>
                         <div class="dw-trabajos-container">
-                            <div class="dw-trabajos-div1">
-                                <img class="dw-trabajos-img" src="imagenes/pagfarmacia.png" alt="pag-farmacia">
-                                <p>Página web en proceso para farmacia</p>
+                            <div class="dw-trabajos-div1"> 
+                                <a href="">
+                                    <img class="dw-trabajos-img" src="imagenes/pagfarmacia.png" alt="pag-farmacia">
+                                    <p>Página web en proceso para farmacia</p>
+                                </a>    
                             </div>
                             <div class="dw-trabajos-div2">
-                                <img class="dw-trabajos-img" src="imagenes/pagrocket.png" alt="pag-farmacia">
-                                <p>Página web para curso de RocketCode</p>
+                                <a href="">
+                                    <img class="dw-trabajos-img" src="imagenes/pagrocket.png" alt="pag-farmacia">
+                                    <p>Página web para curso de RocketCode</p>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -113,17 +119,28 @@
             </div>
         </div>
     </div>
-    <footer class="footer-container">
-        <form action="https://formspree.io/xoqpagwd" method="POST">
-            <div class="form">
-                <div class="form-name">
-                    <input class="form-item-name" type="text" name="name" placeholder="Nombre">
-                    <input class="form-item-ap" type="text" name="apellido" placeholder="Apellido">
-                </div>
+    <footer class="footer-container" id="contactame">
+        <h2 class="title-2">Contactame</h2>
+        <div class="footer-contact-container">
+            <form class="footer-form" action="https://formspree.io/xoqpagwd" method="POST">
+                <input class="form-item-name" type="text" name="name" placeholder="Nombre">
+                <input class="form-item-ap" type="text" name="apellido" placeholder="Apellido">
                 <textarea name="texto" placeholder="Escribí tu consulta"></textarea>
+                <input class="button-submit" type="submit" id="enviar">
+            </form>
+            <div class="footer-text">
+                <p><a href="">lucia.rodriguezjov@gmail.com</a></p>
+                <p><a href="">+54 9 11 39224732</a></p>
             </div>
-            <input class="button-submit" type="submit" id="enviar">
-        </form>
+        </div>
     </footer>
+    <aside>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-github-square"></i>
+        <i class="fab fa-whatsapp-square"></i>
+        <i class="far fa-caret-square-up"></i>
+    </aside>
 </body>
 </html>
