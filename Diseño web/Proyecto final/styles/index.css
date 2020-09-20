@@ -44,7 +44,7 @@ height: auto;
     position: sticky;
     top: -1px;
     border-bottom: solid var(--color-secondary) 1px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .navbar-list {
@@ -107,6 +107,7 @@ a:link, a:visited, a:active {
     padding: 4% 11%;
     box-sizing: border-box;
     /* display: block; */
+    z-index: 1;
 }
 
 .section-container {
@@ -184,6 +185,8 @@ a:link, a:visited, a:active {
     border-radius: 5px;
     color: rgb(49, 49, 49); ;
     box-shadow: 0 4px 8px 0 #29292963;
+    cursor: pointer;
+    outline: none;
 }
 
 /* ARQUITECURA */
@@ -221,6 +224,12 @@ a:link, a:visited, a:active {
 }
 
 /* ARQ-TRABAJOS */
+.arq-trabajos-anchor {
+    display: block;
+    position: relative;
+    bottom: 80px;
+}
+
 .arq-trabajos-full-container {
     margin-top: 5%;
 }
@@ -256,11 +265,13 @@ a:link, a:visited, a:active {
 .arq-trabajos-img {
     width: 100%;
     margin-bottom: 5%;
-    transition: transform 0.5s ease-in-out ;
+    transition: all 0.5s ease-in-out ;
+    filter: grayscale(40%);
 }
 
 .arq-trabajos-img:hover {
     transform: scale(1.1);
+    filter: none;
 }
 
 /* DESARROLLO WEB */
@@ -297,6 +308,12 @@ a:link, a:visited, a:active {
 }
 
 /* DW-TRABAJOS */
+.dw-trabajos-anchor {
+    display: block;
+    position: relative;
+    bottom: 80px;
+}
+
 .dw-trabajos-full-container {
     margin-top: 5%;
 }
@@ -366,6 +383,12 @@ a:link, a:visited, a:active {
     flex: 1 1 auto;
     text-align: center;
     align-items: center;
+    font-size: 1.5rem;
+    padding-top: 2%;
+}
+
+.footer-text a {
+    color: rgb(83, 83, 83);
 }
 
 .form-item-name {
@@ -378,6 +401,7 @@ input {
     border-bottom: var(--color-terciary) solid 2px;
     outline: none;
     transition: border-bottom 0.5s ease-in-out;
+    border-radius: 2px;
 }
 
 input:focus {
@@ -397,6 +421,7 @@ textarea {
     border-bottom: var(--color-terciary) solid 2px;
     outline: none;
     transition: border-bottom 0.5s ease-in-out;
+    border-radius: 2px;
 }
 
 textarea:focus {
@@ -405,6 +430,78 @@ textarea:focus {
 
 .button-submit {
     margin-top: 2%;
-    padding: 0.5% 1%;
+    padding: 1% 1.5%;
     width: fit-content;
+    border: none;
+    border-radius: 2px;
+    color: rgb(83, 83, 83);
+    transition: all 0.5s ease-in-out;
+}
+
+.button-submit:hover {
+    background-color: var(--color-primary);
+    color: white;
+    box-shadow: 0 4px 8px 0 #29292963;
+}
+
+.footer-text-cel  {
+    margin-top: 2%;
+}
+
+/* ASIDE */
+.aside-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 5%;
+    right: 0;
+    z-index: 3;
+}
+
+.aside-container a:hover {
+    margin-right: 25%;
+}
+
+.aside-icons {
+    width: 1.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color:rgb(83, 83, 83); 
+}
+
+.aside-icons:hover {
+    transform: scale(1.2);
+    color: var(--color-primary);
+}
+
+/* ----------RESPONSIVE----------- */
+
+/* TABLET HORIZONTAL */
+@media (min-width:768px) and (max-width:990px) {
+
+    .header-title {
+        font-size: 2.8rem;
+    }
+
+    .navbar-list {
+        font-size: 1.2rem;
+    }
+
+    .sobre-mi-info {
+        width: 50%;
+        font-size: 0.8rem;
+        line-height: none;
+    }
+
+    .sobre-mi-img {
+        width: 50%;
+        height: auto;
+        margin-left: 4%;
+    }
+
+    .sobre-mi-button {
+        font-size: 1rem;
+        margin-top: 1%;
+    }
 }

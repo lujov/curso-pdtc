@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.css">
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
-    <link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Lucía Rodríguez Jovanovich </title>
 </head>
 <body class="body-full-container">
-    <header>
+    <header id="home">
         <h1 class="header-title">Lucía Rodríguez Jovanovich</h1>
         <img class="header-img" src="imagenes/banner.jpg" alt="presentación">
     </header>
@@ -40,7 +40,7 @@
                     <div class="sobre-mi-content">
                         <div class="sobre-mi-info">
                             <p class="sobre-mi-text">Soy Lucía, tengo 26 años y vivo en la ciudad de Buenos Aires, Argentina. Soy una arquitecta recientemente graduada de la UBA en busqueda de aplicar mis conocimientos también a otras ramas y asi ampliar igualmente los mismos. Es asi que, no conformandome unicamente con los estudios realizados hasta el momento, me encuentro incursionando con mayor profundidad en el diseño de interiores y en el desarrollo web. </p>
-                            <button class="sobre-mi-button"> <a href="">Ver CV</a></button>
+                            <a href="CV Rodríguez Jovanovich Lucía.pdf" target="_blank"><button class="sobre-mi-button">Ver CV</button></a>
                         </div>
                         <img class="sobre-mi-img" src="imagenes/sobremi.jpg" alt="mi-imagen">
                     </div>
@@ -59,8 +59,8 @@
                             <img class="arq-skills-img" src="imagenes/Photoshop.png" alt="photoshop">
                             <img class="arq-skills-img" src="imagenes/ilustrator.png" alt="ilustrator">
                         </div>
-                        <div id="arq-trabajos"></div>
                     </div>
+                    <span id="arq-trabajos" class="arq-trabajos-anchor"></span>
                     <div class="arq-trabajos-full-container">
                         <h3 class="title-3">Trabajos</h3>
                         <div class="arq-trabajos-container">
@@ -94,8 +94,8 @@
                             <img class="dw-skills-img" src="imagenes/nodejs.png" alt="nodejs">
                             <img class="dw-skills-img" src="imagenes/mysql.png" alt="mysql">
                         </div>
-                        <div id="dw-trabajos"></div>
                     </div>
+                    <span class="dw-trabajos-anchor" id="dw-trabajos"></span>
                     <!-- TRABAJOS -->
                     <div class="dw-trabajos-full-container">
                         <h3 class="title-3">Trabajos</h3>
@@ -129,18 +129,18 @@
                 <input class="button-submit" type="submit" id="enviar">
             </form>
             <div class="footer-text">
-                <p><a href="">lucia.rodriguezjov@gmail.com</a></p>
-                <p><a href="">+54 9 11 39224732</a></p>
+                <p><a href="mailto:lucia.rodriguezjov@gmail.com">lucia.rodriguezjov@gmail.com</a></p>
+                <p class="footer-text-cel"><a href="tel:+5491139224732">Tel: +54 9 11 39224732</a></p>
             </div>
         </div>
     </footer>
-    <aside>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-github-square"></i>
-        <i class="fab fa-whatsapp-square"></i>
-        <i class="far fa-caret-square-up"></i>
+    <aside class="aside-container">
+        <a href="https://www.instagram.com/luciarodriguezjov/" target="_blank"><i class="fab fa-instagram aside-icons"></i></a>
+        <a href="https://www.facebook.com/lucia.rodriguez.18847/"><i class="fab fa-facebook-square aside-icons"></i></a>
+        <a href=""><i class="fab fa-linkedin aside-icons"></i></a>
+        <a href=""><i class="fab fa-github-square aside-icons"></i></a>
+        <a href=""><i class="fab fa-whatsapp-square aside-icons"></i></a>
+        <a href="#home"><i class="far fa-caret-square-up aside-icons"></i></a>
     </aside>
 </body>
 </html>
