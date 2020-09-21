@@ -385,6 +385,7 @@ a:link, a:visited, a:active {
     align-items: center;
     font-size: 1.5rem;
     padding-top: 2%;
+    color: rgb(83, 83, 83);
 }
 
 .footer-text a {
@@ -415,7 +416,6 @@ input:focus {
 
 textarea {
     width: 100%;
-    margin-left: 2%;
     padding: 0.5% 1%;
     border: 0;
     border-bottom: var(--color-terciary) solid 2px;
@@ -435,17 +435,13 @@ textarea:focus {
     border: none;
     border-radius: 2px;
     color: rgb(83, 83, 83);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease;
 }
 
 .button-submit:hover {
     background-color: var(--color-primary);
     color: white;
     box-shadow: 0 4px 8px 0 #29292963;
-}
-
-.footer-text-cel  {
-    margin-top: 2%;
 }
 
 /* ASIDE */
@@ -488,6 +484,10 @@ textarea:focus {
         font-size: 1.2rem;
     }
 
+    .title-2 {
+        font-size: 1.6rem;
+    }
+
     .sobre-mi-info {
         width: 50%;
         font-size: 0.8rem;
@@ -504,4 +504,84 @@ textarea:focus {
         font-size: 1rem;
         margin-top: 1%;
     }
+
+    .arq-trabajos-container p {
+        font-size: 0.75rem;
+    }
+
+    .dw-trabajos-container p {
+        font-size: 0.75rem;
+    }
+
+    .footer-form {
+        font-size: 0.8rem;
+    }
+
+    .footer-text {
+        font-size: 1.2rem;
+    }
+}
+
+/* TABLET VERTICAL */
+@media (min-width:620px) and (max-width:768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .header-title {
+        font-size: 2.3rem;
+    }
+
+    .navbar-list {
+        font-size: 1.1rem;
+    }
+
+    .title-2 {
+        font-size: 1.4rem;
+    }
+
+    .title-3 {
+        font-size: 1rem;
+    }
+
+    .sobre-mi-info {
+        width: 50%;
+        font-size: 0.7rem;
+        line-height: none;
+    }
+
+    .sobre-mi-text {
+        line-height: 1.2rem;
+    }
+
+    .sobre-mi-img {
+        width: 50%;
+        height: auto;
+        margin-left: 4%;
+        margin-top: 2%;
+        margin-bottom: 7%;
+    }
+
+    .sobre-mi-button {
+        font-size: 1rem;
+        margin-top: 3%;
+    }
+
+    .arq-trabajos-container p {
+        font-size: 0.7rem;
+    }
+
+    .dw-trabajos-container p {
+        font-size: 0.7rem;
+    }
+
+    .footer-form {
+        font-size: 0.6rem;
+    }
+
+    .footer-text {
+        font-size: 1rem;
+    }
+
 }
