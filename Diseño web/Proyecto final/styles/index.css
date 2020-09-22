@@ -33,6 +33,14 @@ width: 100%;
 height: auto;
 }
 
+.container-menu-mobile {
+    display: none;
+}
+
+.header-img-mobile {
+    display: none;
+}
+
 /* NAVBAR */
 
 .navbar-container{
@@ -584,4 +592,39 @@ textarea:focus {
         font-size: 1rem;
     }
 
+}
+
+/* PANTALLAS CHICAS */
+
+@media (min-width:400px) and (max-width:620px) {
+    /* HEADER */
+    body {
+        overflow-x: hidden;
+    }
+
+    .container-menu-mobile {
+        display: flex;
+        
+    }
+
+    .header-img-mobile {
+        display: flex;
+        overflow-x: hidden;
+        width: 100%;
+        height: auto;
+    }
+
+    .header-img {
+        display: none;
+        
+    }
+
+    .navbar-container {
+        display: none;
+    }
+
+    .header-title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
 }
