@@ -12,16 +12,18 @@
     <header id="home">
         <h1 class="header-title">Lucía Rodríguez Jovanovich</h1>
         <img class="header-img" src="imagenes/banner.jpg" alt="presentación">
-        <img  class="header-img-mobile" src="imagenes/banner-mobile.jpg" alt="Presentacion-mobile">
         <div class="container-menu-mobile">
-            <h2 class="titulo-menu-mobile">Menu</h2>
+            <label for="menu"><h2 class="titulo-menu-mobile">Menu</h2></label>
+            <input class="input-menu" id="menu" type="checkbox">
             <div class="menu-mobile">
-                <h4>Sobre mi</h4>
-                <h4>Arquitectura</h4>
-                <h4>Desarrollo web</h4>
-                <h4>Contactame</h4>
+                <a class="menu-mobile-items" href="#sobre-mi-mobile"><p>Sobre mi</h4></a>
+                <a class="menu-mobile-items" href="#arq-mobile"><p>Arquitectura</p></a>
+                <a class="menu-mobile-items" href="#dw-mobile"><p>Desarrollo web</p></a>
+                <a class="menu-mobile-items" href="#contact-mobile"><p>Contactame</p></a>
             </div>
         </div>
+        <img  class="header-img-mobile" src="imagenes/banner-mobile.jpg" alt="Presentacion-mobile">
+        <h1 class="header-title-mobile">Lucía Rodríguez Jovanovich</h1>
     </header>
     <div>
         <nav class="navbar-container">
@@ -43,6 +45,7 @@
             </ul>
         </nav>
         <div class="section-full-container" id="sobre-mi">
+            <span id="sobre-mi-mobile"></span>
             <div class="section-container">
                 <!-- SECCION SOBRE MI -->
                 <section class="sobre-mi-section">
@@ -55,6 +58,7 @@
                         <img class="sobre-mi-img" src="imagenes/sobremi.jpg" alt="mi-imagen">
                     </div>
                     <div id="arquitectura"></div>
+                    <span id="arq-mobile"></span>
                 </section>
                 <!-- SECCION ARQUITECTURA -->
                 <section class="arquitectura-section" id="arq-skills">
@@ -90,6 +94,7 @@
                             </div>
                         </div>
                         <div id="desarrollo-web"></div>
+                        <span id="dw-mobile"></span>
                     </div>
                 </section>
                 <!-- SECCION DESARROLLO WEB -->
@@ -113,13 +118,13 @@
                         <h3 class="title-3">Trabajos</h3>
                         <div class="dw-trabajos-container">
                             <div class="dw-trabajos-div1"> 
-                                <a href="">
+                                <a href="https://farmacia-jovanovich.netlify.app" target="_blank">
                                     <img class="dw-trabajos-img" src="imagenes/pagfarmacia.png" alt="pag-farmacia">
                                     <p>Página web en proceso para farmacia</p>
                                 </a>    
                             </div>
                             <div class="dw-trabajos-div2">
-                                <a href="">
+                                <a href="https://rickyfort-portfolio.netlify.app" target="_blank">
                                     <img class="dw-trabajos-img" src="imagenes/pagrocket.png" alt="pag-farmacia">
                                     <p>Página web para curso de RocketCode</p>
                                 </a>
@@ -132,6 +137,7 @@
         </div>
     </div>
     <footer class="footer-container" id="contactame">
+        <span id="contact-mobile"></span>
         <h2 class="title-2">Contactame</h2>
         <div class="footer-contact-container">
             <form class="footer-form" action="https://formspree.io/xoqpagwd" method="POST">
@@ -149,10 +155,10 @@
     </footer>
     <aside class="aside-container">
         <a href="https://www.instagram.com/luciarodriguezjov/" target="_blank"><i class="fab fa-instagram aside-icons"></i></a>
-        <a href="https://www.facebook.com/lucia.rodriguez.18847/"><i class="fab fa-facebook-square aside-icons"></i></a>
-        <a href=""><i class="fab fa-linkedin aside-icons"></i></a>
-        <a href=""><i class="fab fa-github-square aside-icons"></i></a>
-        <a href=""><i class="fab fa-whatsapp-square aside-icons"></i></a>
+        <a href="https://www.facebook.com/lucia.rodriguez.18847/" target="_blank"><i class="fab fa-facebook-square aside-icons"></i></a>
+        <a href="https://www.linkedin.com/in/luc%C3%ADa-rodr%C3%ADguez-jovanovich-79591b158/" target="_blank"><i class="fab fa-linkedin aside-icons"></i></a>
+        <a href="https://github.com/lujov" target="_blank"><i class="fab fa-github-square aside-icons"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=+5491139224732" target="_blank"><i class="fab fa-whatsapp-square aside-icons"></i></a>
         <a href="#home"><i class="far fa-caret-square-up aside-icons"></i></a>
     </aside>
 </body>

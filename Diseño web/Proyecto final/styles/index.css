@@ -28,6 +28,10 @@
     margin-bottom: 2% ;
 }
 
+.header-title-mobile {
+    display: none;
+}
+
 .header-img {
 width: 100%;
 height: auto;
@@ -290,6 +294,9 @@ a:link, a:visited, a:active {
 }
 
 /* DW-SKILLS */
+.dw-skills-full-container {
+    margin-top: 5%;
+}
 .dw-skills-container {
     width: 100%;
     height: auto;
@@ -300,9 +307,6 @@ a:link, a:visited, a:active {
     box-sizing: border-box;
 }
 
-.dw-skills-full-container {
-    margin-top: 5%;
-}
 
 .dw-skills-img {
     width: 26%;
@@ -469,7 +473,7 @@ textarea:focus {
 
 .aside-icons {
     width: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin-bottom: 5px;
     color:rgb(83, 83, 83); 
 }
@@ -486,6 +490,10 @@ textarea:focus {
 
     .header-title {
         font-size: 2.8rem;
+    }
+
+    .header-title-mobile {
+        display: none;
     }
 
     .navbar-list {
@@ -539,6 +547,10 @@ textarea:focus {
 
     .header-title {
         font-size: 2.3rem;
+    }
+
+    .header-title-mobile {
+        display: none;
     }
 
     .navbar-list {
@@ -596,10 +608,14 @@ textarea:focus {
 
 /* PANTALLAS CHICAS */
 
-@media (min-width:400px) and (max-width:620px) {
+@media (min-width:360px) and (max-width:620px) {
     /* HEADER */
     body {
         overflow-x: hidden;
+    }
+
+    .section-container {
+        margin: 2% 0;
     }
 
     .container-menu-mobile {
@@ -612,11 +628,11 @@ textarea:focus {
         overflow-x: hidden;
         width: 100%;
         height: auto;
+        padding-top: 7%;
     }
 
     .header-img {
-        display: none;
-        
+        display: none;   
     }
 
     .navbar-container {
@@ -624,7 +640,233 @@ textarea:focus {
     }
 
     .header-title {
-        font-size: 1.8rem;
+        display: none;
+    }
+
+    .header-title-mobile {
+        display: block;
         text-align: center;
+        font-size: 1.5rem;
+        text-align: center;
+        color: rgb(49, 49, 49);
+        font-family: 'Playfair Display', serif;
+        margin: 2% 0;
+    }
+
+    .menu-mobile {
+        padding-top: 1%;
+        text-align: center;
+        display: none;
+        height: 0;
+        width: 100%;
+        transition: all 0.5s ease-in-out ;
+    }
+
+
+    .container-menu-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Playfair Display', serif;
+        border-bottom: solid var(--color-secondary) 1px;
+        color: rgb(49, 49, 49);
+        padding-bottom: 0.5%;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .titulo-menu-mobile {
+        font-size: 1.4rem;
+        
+    }
+    .titulo-menu-mobile:hover {
+        border-top: solid var(--color-primary) 4px;
+        color: var(--color-primary) ;
+    }
+
+    .input-menu {
+        display: none;
+    }
+
+    .input-menu:checked~ .menu-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 5rem;
+    }
+
+    .menu-mobile-items:hover {
+        color: var(--color-primary);
+    }
+
+    .title-2 {
+        font-size: 1.2rem;
+    }
+
+    .title-3 {
+        font-size: 1rem;
+    }
+
+    /* SOBRE MI */
+    .sobre-mi-info {
+        width: 100%;
+        font-size: 0.75rem;
+        line-height: none;
+    }
+
+    .sobre-mi-text {
+        line-height: 1.2rem;
+    }
+
+    .sobre-mi-img {
+        display: none;
+    }
+
+    .sobre-mi-button {
+        font-size: 0.9rem;
+        margin-top: 3%;
+        color: rgb(105, 105, 105);
+        font-family: 'Playfair Display', serif;
+        width: fit-content;
+        padding: 1%;
+    }
+
+    /* ARQ-SKILL */
+    .arq-skills-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    
+    .arq-skills-img {
+        width: 48%;
+        height: auto;
+        padding: 2%;
+    }
+
+    /* ARQ-TRABAJOS */
+    .arq-trabajos-container {
+        width: 100%;
+        height: auto;
+        margin-top: 3%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .arq-trabajos-div1 {
+        margin-top: 4%;
+        padding: 1%;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    
+    .arq-trabajos-div2 {
+        margin-top: 6%;
+        padding: 1%;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    
+    .arq-trabajos-div3 {
+        margin-top: 6%;
+        padding: 1%;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .arq-trabajos-img {
+        margin-bottom: 1%;
+    }
+    
+    /* DESARROLLO WEB */
+
+    /* DW-SKILS */
+    .dw-skills-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    
+    
+    .dw-skills-img {
+        width: 48%;
+        height: auto;
+        padding: 2%;
+    }
+
+    /* DW-TRABAJOS */
+    .dw-trabajos-container {
+        width: 100%;
+        height: auto;
+        margin-top: 3%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .dw-trabajos-div1 {
+        margin-top: 6%;
+        padding: 1.5% 1%;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    
+    .dw-trabajos-div2 {
+        margin-top: 6%;
+        padding: 1.5% 1%;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .dw-trabajos-img {
+        margin-bottom: 1% ;
+    }
+
+    /* FOOTER */
+    .footer-text {
+        margin-top: 5%;
+        font-size: 1rem;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    .form-item-name {
+        font-size: 0.8rem;
+    }
+
+    .form-item-ap {
+        font-size: 0.8rem;
+    }
+
+    .footer-form textarea {
+        font-size: 0.8rem;
+    }
+
+    .button-submit {
+        font-size: 0.85rem;
+    }
+
+    .aside-container {
+        position: fixed;
+        top: 10%;
+        right: 0;
+    }
+
+    .aside-icons {
+        width: 1rem;
+        font-size: 1.1rem;
     }
 }

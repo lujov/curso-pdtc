@@ -21,11 +21,31 @@
 // EJERCICIO 4
 
 // declaración de variables
-let numero;
-let numerotriple;
+// let numero;
+// let numerotriple;
 
 // Ingreso de valores
-numero = parseInt(prompt("Ingresa el numero a multiplicar"));
-numerotriple = numero*3;
-alert("El resultado es "+numerotriple);
+// numero = parseInt(prompt("Ingresa el numero a multiplicar"));
+// numerotriple = numero*3;
+// alert("El resultado es "+numerotriple);
 
+// EJERCICIO 5
+
+// Declaracion de variables
+
+// let texto
+
+// texto = prompt("Ingresa tu texto")
+
+// ---------------CLASE 11----------------
+
+// EJERCICIO 1
+
+let respuesta = prompt ("Ingresa tu nombre");
+
+if (!respuesta) {
+    alert ("No ha introducido su nombre");
+    respuesta = prompt ("Ingresa tu nombre, insisto");
+}else{
+    alert ("BIENVENIDA/O " +respuesta);
+}
