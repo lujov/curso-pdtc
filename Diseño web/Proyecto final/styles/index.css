@@ -483,6 +483,34 @@ textarea:focus {
     color: var(--color-primary);
 }
 
+/* PAGINA COCINA */
+.trabajo-cocina {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.trabajo-cocina-img {
+    width: 100%;
+    height: auto;
+    margin: 1% 0;
+}
+
+.titulo-trabajo {
+    color: var(--color-primary);
+    margin-bottom: 1%;
+}
+
+.texto-trabajo {
+margin-bottom: 1%;
+}
+
+.footer-container-trabajo {
+    color:rgb(51, 51, 51); 
+    font-size: 1.2rem; 
+    text-align: center;
+}
+
 /* ----------RESPONSIVE----------- */
 
 /* TABLET HORIZONTAL */
@@ -608,7 +636,7 @@ textarea:focus {
 
 /* PANTALLAS CHICAS */
 
-@media (min-width:360px) and (max-width:620px) {
+@media (max-width:620px) {
     /* HEADER */
     body {
         overflow-x: hidden;
@@ -868,5 +896,30 @@ textarea:focus {
     .aside-icons {
         width: 1rem;
         font-size: 1.1rem;
+    }
+
+    .aside-icons-home {
+        width: 1rem;
+        font-size: 1.1rem;
+    }
+
+    /* COCINA */
+    .titulo-trabajo {
+        font-size: 1.2rem;
+    }
+    
+    .texto-trabajo {
+        font-size: 0.8rem;
+        margin-bottom: 3%;
+    }
+
+    .footer-container-trabajo {
+        display: flex;
+    }
+
+    .footer-container-trabajo {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
     }
 }
