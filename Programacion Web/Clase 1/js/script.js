@@ -37,15 +37,4 @@
 
 // texto = prompt("Ingresa tu texto")
 
-// ---------------CLASE 11----------------
 
-// EJERCICIO 1
-
-let respuesta = prompt ("Ingresa tu nombre");
-
-if (!respuesta) {
-    alert ("No ha introducido su nombre");
-    respuesta = prompt ("Ingresa tu nombre, insisto");
-}else{
-    alert ("BIENVENIDA/O " +respuesta);
-}
