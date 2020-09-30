@@ -163,6 +163,7 @@ a:link, a:visited, a:active {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start
     width: auto;
     box-sizing: border-box;
 }
@@ -379,6 +380,7 @@ a:link, a:visited, a:active {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start
     width: 100%;
 }
 .footer-form {
